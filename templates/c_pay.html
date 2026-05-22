@@ -1,0 +1,54 @@
+{% load static %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay</title>
+   <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <script src="{% static 'js/coco.js' %}"></script>
+</head>
+<body>
+     <nav class="navbar">
+            <div class="logo">
+              <img src="{% static 'images/ChatGPT Image May 14, 2026, 11_27_30 AM.png' %}" alt="logo">
+              <h2>AuroraCoco</h2>
+            </div>
+         <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/menu/">Menu</a></li>
+            <li><a href="/contact/">Contact</a></li>
+           <li> <a href="/customize/">Customize</a></li>
+          </ul>
+        </div>
+        </nav>
+        <div class ="c_pay">
+          <div class="payment-container">
+    <h1> Payment Details</h1>
+
+    <form class="payment-form">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Card Number</label>
+        <input type="text" placeholder="1234 5678 9012 3456" required>
+
+            <div>
+                <label>CVV</label>
+                <input type="password" placeholder="***" required>
+            </div>
+            <div class="pay_button">
+     <a href="#menu" class="btn">Pay</a>
+            </div>
+    </form>
+</div>
+        </div>
+         <footer>
+        @ 2026 choco 
+    </footer>
+    
+</body>
+</html>

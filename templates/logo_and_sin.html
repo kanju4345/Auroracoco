@@ -1,0 +1,68 @@
+{% load static %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <script src="{% static 'js/coco.js' %}"></script>
+</head>
+<body>
+    <div class="meow">
+        <nav class="navbar">
+        
+        <div class="logo">
+           <img src="{% static 'images/ChatGPT Image May 14, 2026, 11_27_30 AM.png' %}" alt="logo">
+           <h2>AuroraCoco</h2>
+        </div>
+           <ul>
+           <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/menu/">Menu</a></li>
+            <li><a href="/contact/">Contact</a></li>
+           <li> <a href="/customize/">Customize</a></li>
+          </ul>
+        </nav>
+        <div class="logged">
+
+            <form class="log_in">
+
+                <div class="heading">
+                    <h1><i>Bon appetit</i></h1>
+                </div>
+
+                <div class="loged">
+                    <input type="text" name="user" placeholder="Email or Phone" required>
+                </div>
+
+                <div class="loged">
+                    <input type="password" name="pass" placeholder="Password" required> 
+                </div>
+
+                <button type="submit" class="click">Log in</button>
+
+                <br><br>
+
+                <h3>OR</h3>
+
+                <h4>
+                    <a href="#">Forgot password?</a>
+                </h4>
+
+            </form>
+
+        </div>
+
+    </nav><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+    <footer>
+        @ 2026 choco 
+    </footer>
+</body>
+</html>

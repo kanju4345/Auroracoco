@@ -1,0 +1,79 @@
+{% load static %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>choco_menu</title>
+   <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <script src="{% static 'js/coco.js' %}"></script>
+</head>
+<body>
+    <nav class="navbar">
+            <div class="logo">
+               <img src="{% static 'images/ChatGPT Image May 14, 2026, 11_27_30 AM.png' %}" alt="logo">
+               <h2>AuroraCoco</h2>
+            </div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/menu/">Menu</a></li>
+            <li><a href="/contact/">Contact</a></li>
+           <li> <a href="/customize/">Customize</a></li>
+          </ul>
+    </nav>
+
+     <h1>🍫 Healthy Chocolate Menu</h1>
+
+<div class="menu">
+  <div class="item">
+   <img src="{% static 'images/dark coco.jpg' %}" alt="Dark Chocolate Bar">
+    <h3>Dark Chocolate Bar</h3>
+    <p>Dark chocolate bars are rich in antioxidants and made with a high percentage of cocoa.
+They offer a deep, intense flavor while containing less sugar than regular chocolate</p>
+    <p class="price">₹150</p>
+    <button class="add" onclick="addToCart(150)">Add to Cart</button>
+  </div>
+
+  <div class="item">
+    <img src="{% static 'images/Small_Almond-Bark-Recipe.png' %}" alt="Almond Protein Bar">
+    <h3>Almond Protein Bar</h3>
+    <p>Almond energy bars are packed with protein, healthy fats, and natural fiber.
+They provide long-lasting energy, making them a perfect nutritious snack.</p>
+    <p class="price">₹180</p>
+    <button class="add" onclick="addToCart(180)">Add to Cart</button>
+  </div>
+
+  <div class="item">
+    <img src="{% static 'images/coco balls.jpg' %}" alt="Cocoa Energy Balls">
+    <h3>Cocoa Energy Balls</h3>
+    <p>Cocoa balls are bite-sized treats made with rich cocoa and natural ingredients.
+They’re a tasty, energy-boosting snack with a smooth chocolatey flavor.</p>
+    <p class="price">₹120</p>
+    <button class="add" onclick="addToCart(120)">Add to Cart</button>
+  </div>
+
+  <div class="item">
+    <img src="{% static 'images/dates coco.jpg' %}" alt="Date Chocolate Balls">
+    <h3>Date Chocolate Balls</h3>
+    <p>Dates cocoa treats are naturally sweet and rich in nutrients.
+They combine the goodness of dates and cocoa for a healthy energy boost.</p>
+    <p class="price">₹100</p>
+    <button class="add" onclick="addToCart(100)">Add to Cart</button>
+  </div>
+  </div>
+
+<div class="cart">
+ <a href="/payment/" class="btn"><h2>🛒 Cart</h2></a>
+  <div class="total"><b><h3>Total: ₹</h3></b><span id="total">0</span></div>
+</div>
+<br>
+<br>
+<br>
+
+
+    <footer>
+        @ 2026 choco 
+    </footer>
+    
+</body>
+</html>

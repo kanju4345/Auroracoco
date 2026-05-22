@@ -1,0 +1,74 @@
+ {% load static %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+   <script src="{% static 'js/coco.js' %}"></script>
+</head>
+<body>
+    <nav class="navbar">
+            <div class="logo">
+               <img src="{% static 'images/ChatGPT Image May 14, 2026, 11_27_30 AM.png' %}" alt="logo">
+               <h2>AuroraCoco</h2>
+            </div>
+      <ul>
+           <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/menu/">Menu</a></li>
+            <li><a href="/contact/">Contact</a></li>
+           <li> <a href="/customize/">Customize</a></li>
+          </ul>
+    </nav>
+   
+     <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">For any help</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                            <h4>Call Us</h4>
+                            <p>+91 7456378392</p>
+                    </div>
+                    <div class="contact-item">
+                            <h4>Email Us</h4>
+                            <p>coco@jangala.com</p>
+                    </div>
+                    <div class="contact-item">
+                            <h4>Service Area</h4>
+                            <p>Mumbai, Delhi, Bangalore</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" onsubmit="submitForm(event)">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="">Select Service</option>
+                            <option value="house"> delivery at House</option>
+                            <option value="office"> delivery atOffice </option>
+                            <option value="deep">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Address Details" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Get help</button>
+                </form>
+            </div>
+        </div>  
+    </section>
+    <footer>
+        @ 2026 choco 
+    </footer>
+</body>
+</html>
