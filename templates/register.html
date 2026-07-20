@@ -21,24 +21,28 @@
            <li> <a href="/customize/">Customize</a></li>
           </ul>
         </nav>
-   <div class="slider">
-    <div class="slide"></div>
-    <div class="slide"></div>
-    <div class="slide"></div>
 
-    <div class="banner">
-        <div class="text">
-            <h1>Indulge Without Guilt</h1>
-            <p>Healthy chocolates crafted for your cravings</p>
+<h1>Create Account</h1>
 
-<a href="{% url 'login' %}" class="btn">                Log In
-            </a>
-            <a href="{% url 'register' %}" class="btn">
+<form method="POST">
+
+    {% csrf_token %}
+
+    <input type="text" name="username" placeholder="Username" required>
+    <br><br>
+
+    <input type="email" name="email" placeholder="Email" required>
+    <br><br>
+
+    <input type="password" name="password" placeholder="Password" required>
+    <br><br>
+
+    <button type="submit">
         Register
-    </a>
-        </div>
-    </div>
-</div>
+    </button>
+
+</form>
+     
     <footer>
         @ 2026 choco 
     </footer>
