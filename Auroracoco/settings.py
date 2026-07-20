@@ -1,30 +1,28 @@
 from pathlib import Path
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+# Build paths inside the project
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-i%4x=(^wyv$8laq_@x_ie2=_41env&$#obow*@mp#df6em7i@t'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+# TEMPORARY: Keep DEBUG=True while fixing deployment issues
+DEBUG = True
 
-ALLOWED_HOSTS = [
-    "auroracoco.vercel.app",
-    "auroracoco-git-main-anju11.vercel.app",
-    "auroracoco-7lehznlgw-anju11.vercel.app",
-    "127.0.0.1",
-    "localhost",
-]
+# TEMPORARY: Allow all hosts
+ALLOWED_HOSTS = ["*"]
 
+# Trust all Vercel domains
 CSRF_TRUSTED_ORIGINS = [
-    "https://auroracoco-6gitbns5t-anju11.vercel.app",
+    "https://*.vercel.app",
 ]
+
+# Required for Vercel proxy
+USE_X_FORWARDED_HOST = True
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'main',
     'django.contrib.admin',
@@ -94,21 +92,16 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
+# Static files
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
 
-
-# Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
