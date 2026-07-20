@@ -11,7 +11,9 @@ SECRET_KEY = 'django-insecure-i%4x=(^wyv$8laq_@x_ie2=_41env&$#obow*@mp#df6em7i@t
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "auroracoco-6gitbns5t-anju11.vercel.app",
+    "auroracoco.vercel.app",
+    "auroracoco-git-main-anju11.vercel.app",
+    "auroracoco-7lehznlgw-anju11.vercel.app",
     "127.0.0.1",
     "localhost",
 ]
